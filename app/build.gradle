@@ -20,7 +20,7 @@ android {
     buildToolsVersion '26.0.2'
 
     defaultConfig {
-        applicationId "com.esoxjem.movieguide"
+        applicationId "com.cog.movieguide"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 2
