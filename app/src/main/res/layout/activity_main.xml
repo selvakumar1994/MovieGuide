@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/fragment_listing"
-        android:name="com.cog.movieguide.listing.MoviesListingFragment"
+        android:name="com.cogzidel.movieguide.listing.MoviesListingFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout="@layout/fragment_movies"/>
