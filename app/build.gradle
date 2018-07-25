@@ -23,7 +23,7 @@ android {
         applicationId "com.cogzidel.movieguide"
         minSdkVersion 16
         targetSdkVersion 26
-        versionCode 15
+        versionCode getCustomVersionCode()
         versionName "1.1.5"
 
         buildConfigField "String", "TMDB_API_KEY", "\"${getProperty("local.properties", "tmdb_api_key")}\""
@@ -57,6 +57,11 @@ ext {
     okhttpVersion = '3.9.0'
     daggerVersion = '2.5'
     espressoVersion = '3.0.1'
+}
+
+def getCustomVersionCode() {
+    def date = new Date()
+    return Integer.valueOf(System.env.BUILD_NUMBER ?: date.format('yyMMddHHmm'))
 }
 
 dependencies {
